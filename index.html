@@ -192,7 +192,8 @@ html {
 		<div class="elementor-element elementor-element-5334c4d4 e-con-full e-flex e-con e-child" data-id="5334c4d4" data-element_type="container">
 				<div class="elementor-element elementor-element-3fd92401 elementor-widget elementor-widget-heading" data-id="3fd92401" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h1 class="elementor-heading-title elementor-size-default">& <br> THE WEDDING OF</h1>				</div>
+					<p class="elementor-heading-title elementor-size-default">&</p>
+					<h1 class="elementor-heading-title elementor-size-default">THE WEDDING OF</h1>				</div>
 				</div>
 				<div class="elementor-element elementor-element-5443f777 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="5443f777" data-element_type="widget" data-widget_type="divider.default">
 				<div class="elementor-widget-container">
@@ -345,16 +346,6 @@ html {
 		'use strict';
 		$("#wpkoi-elements-countdown-3693a4fd").countdown();
 	});
-		$('#open-invitation').click(function () {
-			//$('#overlay').addClass('hide-overlay');
-			playAudio1();
-			/*yang bagian floating button ada animasinya tapi karena ketutup dulu sama overlay jadinya gak nampak*/
-			/*pengen pas di klik buka undangan baru jalan animasinya*/
-			//var c = document.getElementsByClassName('right-sidebar');
-			//for (var i = 0; i < c.length; i++) {
-				//c[i].classList.add('animate');
-			//}
-		});
 	</script>
 	
 					</div>
@@ -1083,7 +1074,16 @@ html {
 				<div class="elementor-widget-container">
 					<script>
 //*code script horizontalnavmeny by WeddingPress, Dilarang diperjual belikan ataupun dibagikan ulang tanpa seijin WeddingPress *//
-
+$('#open-invitation').click(function () {
+			//$('#overlay').addClass('hide-overlay');
+			playAudio1();
+			/*yang bagian floating button ada animasinya tapi karena ketutup dulu sama overlay jadinya gak nampak*/
+			/*pengen pas di klik buka undangan baru jalan animasinya*/
+			//var c = document.getElementsByClassName('right-sidebar');
+			//for (var i = 0; i < c.length; i++) {
+				//c[i].classList.add('animate');
+			//}
+		});
 function playAudio1() {
 			//if (!(player1.getPlayerState() == 1 || player1.getPlayerState() == 3)) {
 				//player1.playVideo();
