@@ -174,7 +174,8 @@ html {
 }		</style>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
 <body class="wp-singular section-template section-template-elementor_canvas single single-section postid-240 custom-background wp-theme-landingpress-wp page-landingpress-full-hf header-inactive footer-inactive elementor-default elementor-template-canvas elementor-kit-14 elementor-page elementor-page-240 elementor-page-5515">
-			<div data-elementor-type="wp-post" data-elementor-id="240" class="elementor elementor-240" data-elementor-post-type="section">
+	<audio src="lib/wedding.mp3" id="myAudio" loop></audio>		
+	<div data-elementor-type="wp-post" data-elementor-id="240" class="elementor elementor-240" data-elementor-post-type="section">
 				<div class="elementor-element elementor-element-7061624a e-flex e-con-boxed e-con e-parent" data-id="7061624a" data-element_type="container" id="section-cover" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-12c036ae elementor-widget elementor-widget-image" data-id="12c036ae" data-element_type="widget" data-widget_type="image.default">
@@ -230,7 +231,7 @@ html {
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<i aria-hidden="true" class="far fa-envelope-open"></i>			</span>
-									<span class="elementor-button-text">Buka Undangan</span>
+									<span class="elementor-button-text" id="open-invitation">Buka Undangan</span>
 					</span>
 					</a>
 				</div>
@@ -239,7 +240,7 @@ html {
 				</div>
 					</div>
 				</div>
-				<audio src="lib/wedding.mp3" id="myAudio" loop></audio>
+				
 		<div class="elementor-element elementor-element-45b23ab2 e-flex e-con-boxed e-con e-parent" data-id="45b23ab2" data-element_type="container" id="couple" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;curve-asymmetrical&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}">
 					<div class="e-con-inner">
 				<div class="elementor-shape elementor-shape-bottom" aria-hidden="true" data-negative="true">
@@ -344,6 +345,16 @@ html {
 		'use strict';
 		$("#wpkoi-elements-countdown-3693a4fd").countdown();
 	});
+		$('#open-invitation').click(function () {
+			//$('#overlay').addClass('hide-overlay');
+			playAudio1();
+			/*yang bagian floating button ada animasinya tapi karena ketutup dulu sama overlay jadinya gak nampak*/
+			/*pengen pas di klik buka undangan baru jalan animasinya*/
+			//var c = document.getElementsByClassName('right-sidebar');
+			//for (var i = 0; i < c.length; i++) {
+				//c[i].classList.add('animate');
+			//}
+		});
 	</script>
 	
 					</div>
