@@ -17,8 +17,8 @@
 	<meta name="robots" content="index,follow" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="WeddingPress" />
-	<meta property="og:url" content="https://weddingpress.co.id/section/demo-09/" />
-	<meta property="og:image" content="https://ehv9nqzx9ct.exactdn.com/wp-content/uploads/2021/05/TEMA-WDP-09.jpg" />
+	<meta property="og:url" content="https://sipahutar77.github.io/haribahagia/" />
+	<meta property="og:image" content="lib/haribahagia.png" />
 	<link rel='dns-prefetch' href='//unpkg.com' />
 	<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
 	<link rel='dns-prefetch' href='//ehv9nqzx9ct.exactdn.com' />
@@ -1513,7 +1513,10 @@
 									e.preventDefault()
 									fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 										.then(response => response.json())
-										.then(response => console.log('Success!', response))
+										.then(response => {
+											form.reset();
+											console.log('Success!', response);
+										})
 										.catch(error => console.error('Error!', error.message))
 								})
 							</script>
